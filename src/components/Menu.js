@@ -52,7 +52,7 @@ export default function Menu(props) {
       {/* Pc version */}
       <Hidden xsDown implementation="css">
         <Drawer
-          variant="permanent"
+          variant="persistent"
           open
           classes={{
             paper: classes.drawerPaper,
