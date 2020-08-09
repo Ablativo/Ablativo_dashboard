@@ -73,7 +73,7 @@ export default function Calendar() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography variant="h5"> {"Calendar"} </Typography>
+            <Typography component="h4" variant="h4"> {"Calendar"} </Typography>
             <br />
             {/* Chnage theme */}
             <FullCalendar

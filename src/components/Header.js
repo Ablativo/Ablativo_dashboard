@@ -42,7 +42,7 @@ export default function Header(props) {
         </IconButton>
 
         { /* App name */}
-        <Typography variant="h5" noWrap>
+        <Typography variant="h4" noWrap>
           {"Ablativo dashboard"}
         </Typography>
 
