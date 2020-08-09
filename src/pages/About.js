@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   link: {
-    color: "#1976d2",
+    color: theme.palette.info.dark,
   },
 }));
 
@@ -58,7 +58,10 @@ export default function About() {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Paper className={classes.paper}>
-          <Typography component="h4" variant="h4"> {"About us"} </Typography>
+          <Typography component="h4" variant="h4">
+            {" "}
+            {"About us"}{" "}
+          </Typography>
           <br />
           <Typography>
             {" "}

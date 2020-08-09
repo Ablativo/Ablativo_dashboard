@@ -73,7 +73,10 @@ export default function Calendar() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography component="h4" variant="h4"> {"Calendar"} </Typography>
+            <Typography component="h4" variant="h4">
+              {" "}
+              {"Calendar"}{" "}
+            </Typography>
             <br />
             {/* Chnage theme */}
             <FullCalendar
@@ -92,8 +95,7 @@ export default function Calendar() {
             <Typography variant="h5" align="center">
               {"Add new event"}
             </Typography>
-            <br />
-            A very beautiful form soon
+            <br />A very beautiful form soon
           </Paper>
         </Grid>
       </Grid>

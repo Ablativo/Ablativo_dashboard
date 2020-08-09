@@ -1,13 +1,12 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import WhatshotIcon from "@material-ui/icons/Whatshot";
+import FireplaceIcon from "@material-ui/icons/Fireplace";
 import OpacityIcon from "@material-ui/icons/Opacity";
 import TelemetryCard from ".././components/TelemetryCard";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Chart from ".././components/Chart";
-
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -17,9 +16,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(3),
     color: theme.palette.text.secondary,
-  }
+  },
 }));
-
 
 export default function Home() {
   const classes = useStyles();
@@ -31,7 +29,7 @@ export default function Home() {
           <TelemetryCard
             name="Temperature (avg.)"
             image="images/red.png"
-            icon={<WhatshotIcon className={classes.icon} />}
+            icon={<FireplaceIcon className={classes.icon} />}
             value="20"
             measure="°C"
           />
@@ -46,20 +44,25 @@ export default function Home() {
           />
         </Grid>
         <Grid item xs={12} md={4}>
-          <TelemetryCard name="let's see (avg.)" image="images/blue.png" value="10" />
+          <TelemetryCard
+            name="let's see (avg.)"
+            image="images/blue.png"
+            value="10"
+          />
         </Grid>
       </Grid>
 
-<br/>
+      <br />
       <Grid item xs={12} md={12} lg={12}>
-                <Paper className={classes.paper}>
-                  
-                <Typography component="h4" variant="h4"> {"Museum visitors this week"} </Typography>
+        <Paper className={classes.paper}>
+          <Typography component="h4" variant="h4">
+            {" "}
+            {"Museum visitors this week"}{" "}
+          </Typography>
           <br />
-                  <Chart/>
-                </Paper>
-              </Grid>
-
+          <Chart />
+        </Paper>
+      </Grid>
     </div>
   );
 }

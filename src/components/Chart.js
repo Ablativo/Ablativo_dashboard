@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 
 // For testing
 const labelsVals = [
@@ -23,11 +23,27 @@ export default function Chart() {
         {
           label: "# visitors",
           data: dataVals,
-          backgroundColor: "rgba(10, 46, 100, 0.2)",
-          borderColor: "rgba(10, 46, 100, 1)",
+          backgroundColor: [
+            "rgb(255, 0, 0, 0.3)",
+            "rgb(255, 127, 0, 0.3)",
+            "rgb(255, 255, 0, 0.3)",
+            "rgb(0, 255, 0, 0.3)",
+            "rgb(0, 0, 255, 0.3)",
+            "rgb(46, 43, 95, 0.3)",
+            "rgb(139, 0, 255, 0.3)",
+          ],
+          borderColor: [
+            "rgb(255, 0, 0, 1)",
+            "rgb(255, 127, 0, 1)",
+            "rgb(255, 255, 0, 1)",
+            "rgb(0, 255, 0, 1)",
+            "rgb(0, 0, 255, 1)",
+            "rgb(46, 43, 95, 1)",
+            "rgb(139, 0, 255, 1)",
+          ],
         },
       ],
-      borderWidth: 2,
+      borderWidth: 10,
     });
   };
 
@@ -37,7 +53,7 @@ export default function Chart() {
 
   return (
     <div>
-      <Line
+      <Bar
         data={chartData}
         options={{
           responsive: true,

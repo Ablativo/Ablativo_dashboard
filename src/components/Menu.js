@@ -2,8 +2,7 @@ import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import MenuList from "./MenuList"
-
+import MenuList from "./MenuList";
 
 const useStyles = makeStyles((theme, drawerWidth = 240) => ({
   drawer: {
@@ -20,7 +19,6 @@ const useStyles = makeStyles((theme, drawerWidth = 240) => ({
   },
 }));
 
-
 export default function Menu(props) {
   const classes = useStyles();
   const theme = useTheme();
@@ -31,7 +29,6 @@ export default function Menu(props) {
 
       {/* Mobile version */}
       <Hidden smUp implementation="css">
-        
         <Drawer
           variant="temporary"
           anchor={theme.direction === "rtl" ? "right" : "left"}
@@ -44,7 +41,7 @@ export default function Menu(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
         >
-          {<MenuList/>}
+          {<MenuList />}
         </Drawer>
       </Hidden>
 
@@ -58,10 +55,9 @@ export default function Menu(props) {
             paper: classes.drawerPaper,
           }}
         >
-          {<MenuList/>}
+          {<MenuList />}
         </Drawer>
       </Hidden>
-
     </nav>
   );
 }
