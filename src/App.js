@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -28,9 +28,9 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  /* For menu show button */
+  /* Menu button on responsive layout */
+  const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -42,7 +42,7 @@ function App() {
         <Menu mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle}/>
 
         <main className={classes.content}> {/* Content borders */}
-          <div className={classes.toolbar} /> {/* Content nder the Header */}
+          <div className={classes.toolbar} /> {/* Content under the Header */}
           <Switch>
             <Route exact path="/">
               <Home />

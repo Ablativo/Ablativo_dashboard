@@ -43,7 +43,7 @@ export default function Header(props) {
 
         { /* App name */}
         <Typography variant="h5" noWrap>
-          Ablativo dashboard
+          {"Ablativo dashboard"}
         </Typography>
 
       </Toolbar>
