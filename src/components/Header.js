@@ -6,7 +6,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
 
-
 const useStyles = makeStyles((theme, drawerWidth = 240) => ({
   appBar: {
     [theme.breakpoints.up("sm")]: {
@@ -22,15 +21,13 @@ const useStyles = makeStyles((theme, drawerWidth = 240) => ({
   },
 }));
 
-
 export default function Header(props) {
   const classes = useStyles();
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
-        
-        { /* Menu botton */}
+        {/* Menu botton */}
         <IconButton
           color="inherit"
           aria-label="open drawer"
@@ -41,11 +38,10 @@ export default function Header(props) {
           <MenuIcon />
         </IconButton>
 
-        { /* App name */}
+        {/* App name */}
         <Typography variant="h4" noWrap>
           {"Ablativo dashboard"}
         </Typography>
-
       </Toolbar>
     </AppBar>
   );

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -12,7 +12,6 @@ import Chat from "./pages/Chat";
 import Settings from "./pages/Settings";
 import About from "./pages/About";
 
-
 // needed to push content to right (not be covered by menu)
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -24,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: theme.mixins.toolbar,
 }));
-
 
 function App() {
   const classes = useStyles();
@@ -38,10 +36,15 @@ function App() {
   return (
     <div className={classes.container}>
       <Router>
-        <Header mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle}/>
-        <Menu mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle}/>
+        <Header
+          mobileOpen={mobileOpen}
+          handleDrawerToggle={handleDrawerToggle}
+        />
+        <Menu mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
 
-        <main className={classes.content}> {/* Content borders */}
+        <main className={classes.content}>
+          {" "}
+          {/* Content borders */}
           <div className={classes.toolbar} /> {/* Content under the Header */}
           <Switch>
             <Route exact path="/">
@@ -65,7 +68,6 @@ function App() {
           </Switch>
           <Footer />
         </main>
-        
       </Router>
     </div>
   );

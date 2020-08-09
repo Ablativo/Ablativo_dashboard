@@ -12,19 +12,17 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import InfoIcon from "@material-ui/icons/Info";
 import { Badge } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import { makeStyles} from "@material-ui/core/styles";
-
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-    toolbar: theme.mixins.toolbar,
+  toolbar: theme.mixins.toolbar,
 }));
 
-
 export default function MenuList(props) {
-    const classes = useStyles();
+  const classes = useStyles();
 
-    return (
-        <div>
+  return (
+    <div>
       {/* necessary for content to be below app bar */}
       <div className={classes.toolbar} />
 
@@ -86,5 +84,5 @@ export default function MenuList(props) {
         </ListItem>
       </List>
     </div>
-    )
+  );
 }

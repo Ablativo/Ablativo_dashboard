@@ -5,7 +5,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-
 const useStyles = makeStyles(() => ({
   root: {
     display: "flex",
@@ -19,21 +18,17 @@ const useStyles = makeStyles(() => ({
   },
   image: {
     width: 120,
-    height: 100
-  }
+    height: 100,
+  },
 }));
-
 
 export default function TelemetryCard(props) {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
-    <CardMedia
-        className={classes.image}
-        image={props.image}
-      >
-       {props.icon}
+      <CardMedia className={classes.image} image={props.image}>
+        {props.icon}
       </CardMedia>
       <div className={classes.details}>
         <CardContent className={classes.content}>
@@ -41,11 +36,10 @@ export default function TelemetryCard(props) {
             {props.name}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-          &nbsp;  {props.value} {props.measure}
+            &nbsp; {props.value} {props.measure}
           </Typography>
         </CardContent>
       </div>
-      
     </Card>
   );
 }
