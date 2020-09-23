@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import FireplaceIcon from "@material-ui/icons/Fireplace";
 import OpacityIcon from "@material-ui/icons/Opacity";
+import SpeedIcon from '@material-ui/icons/Speed';
 import TelemetryCard from ".././components/TelemetryCard";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -45,9 +46,10 @@ export default function Home() {
         </Grid>
         <Grid item xs={12} md={4}>
           <TelemetryCard
-            name="let's see (avg.)"
-            image="images/blue.png"
+            name="Pressure (avg.)"
+            image="images/yellow.png"
             value="10"
+            icon={<SpeedIcon className={classes.icon} />}
           />
         </Grid>
       </Grid>
@@ -57,7 +59,7 @@ export default function Home() {
         <Paper className={classes.paper}>
           <Typography component="h4" variant="h4">
             {" "}
-            {"Museum visitors this week"}{" "}
+            {"Ablativo users this week"}{" "}
           </Typography>
           <br />
           <Chart />

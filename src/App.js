@@ -8,8 +8,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import Calendar from "./pages/Calendar";
-import Chat from "./pages/Chat";
-import Settings from "./pages/Settings";
 import About from "./pages/About";
 
 // needed to push content to right (not be covered by menu)
@@ -55,12 +53,6 @@ function App() {
             </Route>
             <Route path="/Calendar">
               <Calendar />
-            </Route>
-            <Route path="/Chat">
-              <Chat />
-            </Route>
-            <Route path="/Settings">
-              <Settings />
             </Route>
             <Route path="/About">
               <About />
