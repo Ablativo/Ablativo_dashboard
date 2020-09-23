@@ -21,7 +21,7 @@ export default function Chart() {
       labels: labelsVals,
       datasets: [
         {
-          label: "# visitors",
+          label: "# users",
           data: dataVals,
           backgroundColor: [
             "rgb(255, 0, 0, 0.3)",

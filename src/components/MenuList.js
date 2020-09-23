@@ -5,10 +5,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import TodayIcon from "@material-ui/icons/Today";
-import ChatIcon from "@material-ui/icons/Chat";
 import RoomIcon from "@material-ui/icons/Room";
 import HomeIcon from "@material-ui/icons/Home";
-import SettingsIcon from "@material-ui/icons/Settings";
 import InfoIcon from "@material-ui/icons/Info";
 import { Badge } from "@material-ui/core";
 import { Link } from "react-router-dom";
@@ -26,7 +24,6 @@ export default function MenuList(props) {
       {/* necessary for content to be below app bar */}
       <div className={classes.toolbar} />
 
-      {/* Home & rooms */}
       <Divider />
       <List>
         <ListItem button component={Link} to={"/"}>
@@ -42,11 +39,7 @@ export default function MenuList(props) {
           </ListItemIcon>
           <ListItemText primary={"Rooms"} />
         </ListItem>
-      </List>
 
-      {/* Calendar & chat */}
-      <Divider />
-      <List>
         <ListItem button component={Link} to={"/Calendar"}>
           <ListItemIcon>
             <Badge badgeContent={"Soon"} color={"error"}>
@@ -55,27 +48,10 @@ export default function MenuList(props) {
           </ListItemIcon>
           <ListItemText primary={"Calendar"} />
         </ListItem>
-
-        <ListItem button component={Link} to={"/Chat"}>
-          <ListItemIcon>
-            <Badge badgeContent={"Soon"} color={"error"}>
-              <ChatIcon />
-            </Badge>
-          </ListItemIcon>
-          <ListItemText primary={"Chat"} />
-        </ListItem>
       </List>
 
-      {/* Settings & about */}
-      <Divider />
+        <Divider />
       <List>
-        <ListItem button component={Link} to={"/Settings"}>
-          <ListItemIcon>
-            <SettingsIcon />
-          </ListItemIcon>
-          <ListItemText primary={"Settings"} />
-        </ListItem>
-
         <ListItem button component={Link} to={"/About"}>
           <ListItemIcon>
             <InfoIcon />

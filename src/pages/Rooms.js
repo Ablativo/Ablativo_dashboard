@@ -84,7 +84,7 @@ export default function Rooms() {
                     <Typography> Humidity: &nbsp; {props.hum} % </Typography>
                   </Grid>
                   <Grid item xs={12} sm={6} className={classes.inPaper}>
-                    <Typography> Altro: &nbsp; {props.altro} ? </Typography>
+                    <Typography> Pressure: &nbsp; {props.altro} mBar </Typography>
                   </Grid>
                 </Grid>
               </Grid>
