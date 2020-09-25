@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ablativodashboard-dev-195505-authRole",
+      "UnauthRoleArn": "arn:aws:iam::634046029494:role/amplify-ablativodashboard-dev-195505-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::634046029494:role/amplify-ablativodashboard-dev-195505-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ablativodashboard-dev-195505-deployment",
+      "UnauthRoleName": "amplify-ablativodashboard-dev-195505-unauthRole",
+      "StackName": "amplify-ablativodashboard-dev-195505",
+      "StackId": "arn:aws:cloudformation:us-east-1:634046029494:stack/amplify-ablativodashboard-dev-195505/1752c420-fe8f-11ea-8395-127f049a8fed",
+      "AmplifyAppId": "d11m1eut0bi68a"
+    },
+    "categories": {
+      "auth": {
+        "ablativodashboard4614ece9": {}
+      }
+    }
+  }
+}

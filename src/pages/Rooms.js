@@ -100,6 +100,7 @@ export default function Rooms() {
     );
   }
 
+  // page
   return (
     <Grid container spacing={3}>
       {exampleRooms.map((info) => (

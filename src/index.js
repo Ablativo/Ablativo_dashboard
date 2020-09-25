@@ -4,6 +4,9 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "@material-ui/core/styles";
 import App from "./App";
 import theme from "./theme";
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
 
 ReactDOM.render(
   <React.StrictMode>
