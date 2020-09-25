@@ -4,7 +4,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
-import Button from '@material-ui/core/Button';
+import { AmplifySignOut } from '@aws-amplify/ui-react';
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme, drawerWidth = 240) => ({
@@ -20,6 +20,10 @@ const useStyles = makeStyles((theme, drawerWidth = 240) => ({
       display: "none",
     },
   },
+  log: {
+    position: "absolute", 
+    right: 15
+  }
 }));
 
 export default function Header(props) {
@@ -40,10 +44,13 @@ export default function Header(props) {
         </IconButton>
 
         {/* App name */}
-        <Typography variant="h4" noWrap>
+        <Typography variant="h5" noWrap>
           {"Ablativo dashboard"}
         </Typography>
-   
+        
+        <div className={classes.log}>
+          <AmplifySignOut />
+        </div>
       </Toolbar>
     </AppBar>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -65,4 +66,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);

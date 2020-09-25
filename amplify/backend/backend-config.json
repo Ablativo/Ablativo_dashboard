@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "ablativodashboard4614ece9": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
