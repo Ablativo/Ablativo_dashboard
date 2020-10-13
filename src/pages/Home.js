@@ -9,6 +9,18 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Chart from ".././components/Chart";
 
+// For testing
+const labelsVals = [
+  "03-08",
+  "04-08",
+  "05-08",
+  "06-08",
+  "07-08",
+  "08-08",
+  "09-08",
+];
+const dataVals = [10, 32, 12, 14, 20, 8, 18];
+
 const useStyles = makeStyles((theme) => ({
   icon: {
     width: 120,
@@ -62,7 +74,7 @@ export default function Home() {
             {"Ablativo users this week"}{" "}
           </Typography>
           <br />
-          <Chart />
+          <Chart labelsVals={labelsVals} dataVals={dataVals} />
         </Paper>
       </Grid>
     </div>

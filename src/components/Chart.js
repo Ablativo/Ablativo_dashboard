@@ -11,9 +11,10 @@ const labelsVals = [
   "08-08",
   "09-08",
 ];
-const dataVals = [10, 15, 12, 14, 20, 8, 18];
+const dataVals = [10, 32, 12, 14, 20, 8, 18];
 
-export default function Chart() {
+
+export default function Chart(props) {
   const [chartData, setChartData] = useState();
 
   const chart = () => {

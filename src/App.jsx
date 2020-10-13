@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Header from "./components/Header";
+import FailureDetector from "./failureDetector";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -40,6 +41,7 @@ function App() {
           handleDrawerToggle={handleDrawerToggle}
         />
         <Menu mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
+        <FailureDetector/>
 
         <main className={classes.content}>
           {" "}

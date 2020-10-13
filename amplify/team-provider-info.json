@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-ablativodashboard-dev-195505-authRole",
-      "UnauthRoleArn": "arn:aws:iam::634046029494:role/amplify-ablativodashboard-dev-195505-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::634046029494:role/amplify-ablativodashboard-dev-195505-authRole",
+      "AuthRoleName": "amplify-ablativodashboard-dev-192922-authRole",
+      "UnauthRoleArn": "arn:aws:iam::634046029494:role/amplify-ablativodashboard-dev-192922-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::634046029494:role/amplify-ablativodashboard-dev-192922-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-ablativodashboard-dev-195505-deployment",
-      "UnauthRoleName": "amplify-ablativodashboard-dev-195505-unauthRole",
-      "StackName": "amplify-ablativodashboard-dev-195505",
-      "StackId": "arn:aws:cloudformation:us-east-1:634046029494:stack/amplify-ablativodashboard-dev-195505/1752c420-fe8f-11ea-8395-127f049a8fed",
-      "AmplifyAppId": "d11m1eut0bi68a"
+      "DeploymentBucketName": "amplify-ablativodashboard-dev-192922-deployment",
+      "UnauthRoleName": "amplify-ablativodashboard-dev-192922-unauthRole",
+      "StackName": "amplify-ablativodashboard-dev-192922",
+      "StackId": "arn:aws:cloudformation:us-east-1:634046029494:stack/amplify-ablativodashboard-dev-192922/7bb8c590-07f9-11eb-9ba1-0e28043c5c55",
+      "AmplifyAppId": "d32bhe22scxok8"
     },
     "categories": {
       "auth": {
-        "ablativodashboard4614ece9": {}
+        "ablativodashboarda9a559c5": {}
       }
     }
   }
