@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "ablativodashboard4614ece9_identitypool_4614ece9",
+    "identityPoolName": "ablativodashboarda9a559c5_identitypool_a9a559c5",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "ablati4614ece9",
-    "userPoolName": "ablativodashboard4614ece9_userpool_4614ece9",
+    "resourceNameTruncated": "ablatia9a559c5",
+    "userPoolName": "ablativodashboarda9a559c5_userpool_a9a559c5",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "ablati4614ece9_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "ablatia9a559c5_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "4614ece9",
-    "resourceName": "ablativodashboard4614ece9",
+    "sharedId": "a9a559c5",
+    "resourceName": "ablativodashboarda9a559c5",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,9 +46,6 @@
         ]
     },
     "useDefault": "default",
-    "usernameAttributes": [
-        "email"
-    ],
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "dependsOn": []

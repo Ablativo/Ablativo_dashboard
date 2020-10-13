@@ -95,7 +95,7 @@ export default function About() {
               <TeamCard
                 name="Manuel Ivagnes"
                 image="images/manuel.jpg"
-                role="Embedded devices & Dashboard"
+                role="Embedded devices & Analytics dashboard"
                 link="https://www.linkedin.com/in/manuel-ivagnes-4a5ba018b"
                 description="Graduated computer engineer. Attending MSc in Engineering in Computer Science at Sapienza University of Rome.      "
               />

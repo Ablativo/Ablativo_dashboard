@@ -4,7 +4,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+
 
 // For testing
 const exampleRooms = [
@@ -72,7 +74,7 @@ export default function Rooms() {
                 <Grid container>
                   <Grid item xs={12} sm={6} className={classes.inPaper}>
                     <Typography>
-                      Visitors: &nbsp; {props.visitors} #{" "}
+                      Visitors today: &nbsp; {props.visitors} #{" "}
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sm={6} className={classes.inPaper}>
@@ -90,7 +92,7 @@ export default function Rooms() {
               </Grid>
             </Grid>
             <Grid item className={classes.inPaper}>
-              <Button className={classes.link} size="small" color="primary">
+              <Button className={classes.link} size="small" color="primary" component={Link} to={"/Rooms/1"}>
                 &nbsp; <Typography variant="button"> More info</Typography>
               </Button>
             </Grid>
