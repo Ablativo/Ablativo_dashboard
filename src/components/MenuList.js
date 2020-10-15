@@ -37,7 +37,7 @@ export default function MenuList(props) {
           <ListItemIcon>
             <RoomIcon />
           </ListItemIcon>
-          <ListItemText primary={"Rooms"} />
+          <ListItemText primary={"Stanze"} />
         </ListItem>
 
         <ListItem button component={Link} to={"/Calendar"}>
@@ -46,7 +46,7 @@ export default function MenuList(props) {
               <TodayIcon />
             </Badge>
           </ListItemIcon>
-          <ListItemText primary={"Calendar"} />
+          <ListItemText primary={"Calendario"} />
         </ListItem>
       </List>
 

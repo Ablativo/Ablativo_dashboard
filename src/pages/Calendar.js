@@ -63,7 +63,7 @@ export default function Calendar() {
         <Alert severity="warning">
           <Typography>
             {
-              " Hi, this is only a preview of a future functionality. Play and let us know if you like it! "
+              " Ciao, questa é solo una preview per la prossima release. Facci sapere se ti piace!"
             }
           </Typography>
         </Alert>
@@ -93,9 +93,9 @@ export default function Calendar() {
         <Grid item xs={12}>
           <Paper className={classes.paperLeft}>
             <Typography variant="h5" align="center">
-              {"Add new event"}
+              {"Aggiungi un evento"}
             </Typography>
-            <br />A very beautiful form soon
+            <br /> Il form sarà disponibile molto presto :)
           </Paper>
         </Grid>
       </Grid>

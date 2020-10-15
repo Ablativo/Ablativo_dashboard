@@ -1,25 +1,17 @@
-import React from "react";
+import React  from "react";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import FireplaceIcon from "@material-ui/icons/Fireplace";
-import OpacityIcon from "@material-ui/icons/Opacity";
-import SpeedIcon from '@material-ui/icons/Speed';
-import TelemetryCard from ".././components/TelemetryCard";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Chart from ".././components/Chart";
 
-// For testing
-const labelsVals = [
-  "03-08",
-  "04-08",
-  "05-08",
-  "06-08",
-  "07-08",
-  "08-08",
-  "09-08",
-];
-const dataVals = [10, 32, 12, 14, 20, 8, 18];
+/*
+import FireplaceIcon from "@material-ui/icons/Fireplace";
+import OpacityIcon from "@material-ui/icons/Opacity";
+import SpeedIcon from '@material-ui/icons/Speed';
+import TelemetryCard from ".././components/TelemetryCard";
+*/ 
+
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -37,6 +29,7 @@ export default function Home() {
 
   return (
     <div>
+      {/* 
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
           <TelemetryCard
@@ -67,14 +60,16 @@ export default function Home() {
       </Grid>
 
       <br />
+      */}
+
       <Grid item xs={12} md={12} lg={12}>
         <Paper className={classes.paper}>
           <Typography component="h4" variant="h4">
             {" "}
-            {"Ablativo users this week"}{" "}
+            {"Utenti questa settimana"}{" "}
           </Typography>
           <br />
-          <Chart labelsVals={labelsVals} dataVals={dataVals} />
+          <Chart/>
         </Paper>
       </Grid>
     </div>
