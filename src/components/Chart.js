@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
+import { axios } from '../axios';
 
 // For testing
+
 const labelsVals = [
   "03-08",
   "04-08",
@@ -14,15 +16,35 @@ const labelsVals = [
 const dataVals = [10, 32, 12, 14, 20, 8, 18];
 
 
-export default function Chart(props) {
+export default function Chart() {
   const [chartData, setChartData] = useState();
+
+  // API fetch data
+  const [data, setData] = useState([]);
+  const days = []
+
+  const getDays = async () => {  
+    axios.get('/day/getWeek').then((response) => {
+      setData(response.data.data);
+      console.log(response.data.data);
+    })
+    .catch((err) => {
+      console.log("cannot load visits numbers" + err);
+    });
+  };
+
+  useEffect(() => {
+    getDays()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
 
   const chart = () => {
     setChartData({
       labels: labelsVals,
       datasets: [
         {
-          label: "# users",
+          label: "# utenti",
           data: dataVals,
           backgroundColor: [
             "rgb(255, 0, 0, 0.3)",
@@ -50,6 +72,7 @@ export default function Chart(props) {
 
   React.useEffect(() => {
     chart();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

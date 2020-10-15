@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-
 import Header from "./components/Header";
 import FailureDetector from "./failureDetector";
 import Menu from "./components/Menu";
@@ -11,6 +10,7 @@ import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import Calendar from "./pages/Calendar";
 import About from "./pages/About";
+
 
 // needed to push content to right (not be covered by menu)
 const useStyles = makeStyles((theme) => ({
