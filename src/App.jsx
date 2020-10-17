@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+//import FailureDetector from "./failureDetector";
 import Header from "./components/Header";
-import FailureDetector from "./failureDetector";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
+import Room from "./pages/Room";
 import Calendar from "./pages/Calendar";
 import About from "./pages/About";
 
@@ -41,7 +42,7 @@ function App() {
           handleDrawerToggle={handleDrawerToggle}
         />
         <Menu mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
-        <FailureDetector/>
+        {/*<FailureDetector/>*/}
 
         <main className={classes.content}>
           {" "}
@@ -54,6 +55,9 @@ function App() {
             <Route path="/Rooms">
               <Rooms />
             </Route>
+            <Route path="/Room/:id">
+              <Room />
+          </Route>
             <Route path="/Calendar">
               <Calendar />
             </Route>
