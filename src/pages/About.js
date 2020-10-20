@@ -59,25 +59,20 @@ export default function About() {
       <Grid item xs={12}>
         <Paper className={classes.paper}>
           <Typography component="h4" variant="h4">
-            {" "}
-            {"About us"}{" "}
+            {"Chi siamo"}
           </Typography>
           <br />
           <Typography>
-            {" "}
-            Museums, the house of muses, some people love them, but for some, it
-            is no more than a boring collection of lifeless things. However,
-            here comes our application, Ablativo, intending to bring also those
-            least interested people to the wonderful world of museums.
+            Musei, la casa delle muse, alcuni li amano, ma per altri non sono altro
+            che una noise collezione di statue. La nostra applicazione, Ablativo, 
+            vuole portare anche questi ultimi ad apprezzare il magnifico mondo dei musei.
           </Typography>
           <br />
           <Typography>
-            {" "}
-            We are three computer engineers and students of the MSc of
-            engineering in computer science at "La Sapienza" University of Rome,
-            and this project has been developed as part of the Internet of
-            Things 2019-2020 course. Here you can find the links to our LinkedIn
-            profiles.
+            Noi siamo tre ingegneri informatici e studenti del MSc in 
+            engineering in computer science a "La Sapienza" University of Rome
+            e questo progetto è stato sviluppato come parte del corso in 
+            Internet of Things 2019-2020. Qui puoi trovare i nostri profili Linkedin
           </Typography>
           <br />
 

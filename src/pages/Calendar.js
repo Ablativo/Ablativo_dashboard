@@ -8,7 +8,7 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import { makeStyles } from "@material-ui/core/styles";
 
-// Naive list for the preview
+// Test list for the preview
 const exampleEvents = [
   {
     title: "Atena event",
@@ -62,9 +62,7 @@ export default function Calendar() {
       <Snackbar open={true} anchorOrigin={{ vertical, horizontal }}>
         <Alert severity="warning">
           <Typography>
-            {
-              " Ciao, questa é solo una preview per la prossima release. Facci sapere se ti piace!"
-            }
+            { " Ciao, questa é solo una preview per la prossima release. Facci sapere se ti piace!" }
           </Typography>
         </Alert>
       </Snackbar>
@@ -74,8 +72,7 @@ export default function Calendar() {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <Typography component="h4" variant="h4">
-              {" "}
-              {"Calendar"}{" "}
+              {"Calendario"}
             </Typography>
             <br />
             {/* Chnage theme */}

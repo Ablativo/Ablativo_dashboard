@@ -56,7 +56,7 @@ export default function MenuList(props) {
           <ListItemIcon>
             <InfoIcon />
           </ListItemIcon>
-          <ListItemText primary={"About"} />
+          <ListItemText primary={"Chi siamo"} />
         </ListItem>
       </List>
     </div>

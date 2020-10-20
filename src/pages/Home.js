@@ -5,19 +5,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Chart from ".././components/Chart";
 
-/*
-import FireplaceIcon from "@material-ui/icons/Fireplace";
-import OpacityIcon from "@material-ui/icons/Opacity";
-import SpeedIcon from '@material-ui/icons/Speed';
-import TelemetryCard from ".././components/TelemetryCard";
-*/ 
-
 
 const useStyles = makeStyles((theme) => ({
-  icon: {
-    width: 120,
-    height: 100,
-  },
   paper: {
     padding: theme.spacing(3),
     color: theme.palette.text.secondary,
@@ -29,44 +18,10 @@ export default function Home() {
 
   return (
     <div>
-      {/* 
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={4}>
-          <TelemetryCard
-            name="Temperature (avg.)"
-            image="images/red.png"
-            icon={<FireplaceIcon className={classes.icon} />}
-            value="20"
-            measure="°C"
-          />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <TelemetryCard
-            name="Humidity (avg.)"
-            image="images/blue.png"
-            icon={<OpacityIcon className={classes.icon} />}
-            value="10"
-            measure="%"
-          />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <TelemetryCard
-            name="Pressure (avg.)"
-            image="images/yellow.png"
-            value="10"
-            icon={<SpeedIcon className={classes.icon} />}
-          />
-        </Grid>
-      </Grid>
-
-      <br />
-      */}
-
       <Grid item xs={12} md={12} lg={12}>
         <Paper className={classes.paper}>
           <Typography component="h4" variant="h4">
-            {" "}
-            {"Utenti questa settimana"}{" "}
+            {"Utenti questa settimana"}
           </Typography>
           <br />
           <Chart/>

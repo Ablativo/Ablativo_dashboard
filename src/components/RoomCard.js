@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     color: theme.palette.text.secondary,
   },
+  link: {
+    color: theme.palette.info.dark,
+  },
 }));
 
 
@@ -32,51 +35,40 @@ export default function RoomCard(props) {
   return (
     <Paper className={classes.paper}>
         <Grid container spacing={2}>
-        <Grid item>
-            <CardMedia className={classes.image} image={props.image}>
-            {props.icon}
-            </CardMedia>
-        </Grid>
+          <Grid item>
+              <CardMedia className={classes.image} image={props.image}>
+              </CardMedia>
+          </Grid>
         <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
-            <Grid item xs>
-                <Typography
-                gutterBottoms
-                component="h5"
-                variant="h5"
-                className={classes.inPaper}
-                >
-                {props.name}
-                </Typography>
+              <Grid item xs>
+                  <Typography
+                  gutterBottoms
+                  component="h5"
+                  variant="h5"
+                  className={classes.inPaper}
+                  >
+                  {props.name}
+                  </Typography>
 
-                <Grid container>
-                <Grid item xs={12} sm={6} className={classes.inPaper}>
-                    <Typography> 
-                    Likes: &nbsp; {props.likes} # 
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} sm={6} className={classes.inPaper}>
-                    <Typography>
-                    Temperatura: &nbsp; {props.temp} °C{" "}
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} sm={6} className={classes.inPaper}>
-                    <Typography>
-                    Umidità: &nbsp; {props.hum} %
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} sm={6} className={classes.inPaper}>
-                    <Typography> 
-                    Pressione: &nbsp; {props.press} mBar 
-                    </Typography>
-                </Grid>
-                </Grid>
-            </Grid>
+                  <Grid container>
+                    <Grid item xs={12} sm={12} className={classes.inPaper}>
+                        <Typography> 
+                        Likes: &nbsp; {props.likes} # 
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={12} className={classes.inPaper}>
+                        <Typography>
+                        Descrizione: &nbsp; {props.description} 
+                        </Typography>
+                    </Grid>
+                  </Grid>
+              </Grid>
             </Grid>
             <Grid item className={classes.inPaper}>
-            <Button className={classes.link} size="small" color="primary" component={Link} to={`/room/${props.roomID}`}> 
-                &nbsp; <Typography variant="button"> More info</Typography>
-            </Button>
+              <Button className={classes.link} size="small" color="primary" component={Link} to={`/room/${props.roomID}`}> 
+                  &nbsp; <Typography variant="button"> More info</Typography>
+              </Button>
             </Grid>
         </Grid>
         </Grid>

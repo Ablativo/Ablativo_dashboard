@@ -36,9 +36,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: theme.palette.text.secondary,
   },
-  link: {
-    color: theme.palette.info.dark,
-  },
 }));
 
 
@@ -84,16 +81,11 @@ export default function Rooms() {
               name={info.roomName}
               image={info.image}
               likes={info.upVote}
-              temp={info.temp}
-              hum={info.hum}
-              press={info.press}
+              description={info.description}
             />
           </Grid>
         ))}
       </Grid>
-
     </div>
-
-
   );
 }
