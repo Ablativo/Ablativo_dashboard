@@ -29,14 +29,13 @@ export default function ArtworkCard(props) {
     
   return (
     <Paper className={classes.paper}>
-        <Grid container spacing={2}>
+      <Grid container spacing={2}>
         <Grid item>
             <CardMedia className={classes.image} image={props.image}>
-            {props.icon}
             </CardMedia>
         </Grid>
         <Grid item xs={12} sm container>
-            <Grid item xs container direction="column" spacing={2}>
+          <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
                 <Typography
                 gutterBottoms
@@ -47,7 +46,7 @@ export default function ArtworkCard(props) {
                 {props.name}
                 </Typography>
 
-                <Grid container>
+              <Grid container>
                 <Grid item xs={12} sm={6} className={classes.inPaper}>
                     <Typography> 
                     Voti Up/Down: &nbsp; {props.upVote} / {props.downVote} # 
@@ -63,11 +62,11 @@ export default function ArtworkCard(props) {
                     Descrizione: &nbsp; {props.description} 
                     </Typography>
                 </Grid>
-                </Grid>
+              </Grid>
             </Grid>
-            </Grid>
+          </Grid>
         </Grid>
-        </Grid>
+      </Grid>
     </Paper>
     );
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-//import FailureDetector from "./failureDetector";
+//import FailureDetector from "./failureDetector";  needs IAM creation to work
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
@@ -45,7 +45,6 @@ function App() {
         {/*<FailureDetector/>*/}
 
         <main className={classes.content}>
-          {" "}
           {/* Content borders */}
           <div className={classes.toolbar} /> {/* Content under the Header */}
           <Switch>

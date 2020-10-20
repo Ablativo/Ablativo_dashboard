@@ -25,7 +25,8 @@ export default function Chart() {
       let days = [];
       let numbers = [] 
       response.data.data.forEach(element => {
-        days.push(element.day);
+        var theDate = new Date(parseInt(element.date) * 1000)
+        days.push(theDate.toDateString());  //timestamp to date
         numbers.push(element.number);
       });
       setChartData({
