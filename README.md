@@ -2,12 +2,21 @@
 
 This repository contains the **React + Material UI** Dashboard used by the museum curators.
 
-For the initial setup 
+For the initial setup, we first need to make the 
+```
+aws-exports.js
+```
+containing the configuration for cognito ([look at the documentation](https://docs.amplify.aws/lib/auth/start/q/platform/js#configure-your-application)).
+
+
+Then run 
 ```
 yarn install
 ```
+for the packagesthe packages.
 
-Then, to run the app in development mode
+
+Finally, to run the app
 ```
 yarn start
 ```
